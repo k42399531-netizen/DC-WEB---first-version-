@@ -1,0 +1,195 @@
+/* تسجيل دخول للمستخدم اول صفحة*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right , rgb(2, 70, 70),rgb(100, 90, 90),black);
+}
+h1{
+    font-size: 6vh;
+    font-family: sans-serif;
+    color: aqua;
+    margin-top: 5vh;
+    margin-right: 3vh;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+   
+}
+/* تسجيل الدخول*/
+.login{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid gray;
+    border-radius:10px ;
+}
+.login label{
+    font-size: 5vh;
+    color: white;
+    font-family: sans-serif;
+}
+.login input{
+    font-size: 4vh;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+}    
+.login button{
+    font-size: 3vh;
+    font-family: sans-serif;
+    background-color: green;
+    color: white;
+    margin-top: 1vh;
+    padding: 1vh ;
+    margin-right: 7vh;
+}
+#button{
+    font-size: 3vh;
+    font-family: sans-serif;
+    background-color: green;
+    color: white;
+    margin-right: 4vh;
+    padding: 1vh ;
+    margin-right: 7vh;
+}
+.img{
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+.img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+/* التواصل*/
+.call{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    margin-top: 8vh;
+}
+.call a{
+    font-size: 7vh;
+    color:aqua;
+    text-decoration: none;
+}
+/* تحسينات للشاشات المتوسطة (تابلت) */
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    .main {
+        gap: 2vw;
+    }
+    .login {
+        width: 45vw;
+    }
+    .img img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة (موبايل) */
+@media screen and (max-width: 800px) {
+    body {
+        padding: 1vh;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+        margin: 2vh 1vh;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        padding: 1vh;
+    }
+
+    .login {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .login label {
+        font-size: 3.5vh;
+        display: block;
+        margin-bottom: 0.5vh;
+    }
+
+    .login input {
+        font-size: 3vh;
+        width: 100%;
+        padding: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .login button {
+        font-size: 2.5vh;
+        padding: 1vh 2vh;
+        margin: 1vh auto;
+        display: block;
+        width: auto;
+    }
+
+    #button {
+        font-size: 2.5vh;
+        padding: 1vh 2vh;
+        margin: 1vh auto;
+        display: block;
+        width: auto;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .call {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3vh;
+        margin-top: 4vh;
+        padding: 1vh;
+    }
+
+    .call a {
+        font-size: 5vh;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.5vh;
+    }
+
+    .login {
+        width: 95%;
+        padding: 1.5vh;
+    }
+
+    .login label {
+        font-size: 3vh;
+    }
+
+    .login input {
+        font-size: 2.5vh;
+    }
+
+    .login button,
+    #button {
+        font-size: 2vh;
+        padding: 0.8vh 1.5vh;
+    }
+
+    .call a {
+        font-size: 4vh;
+    }
+}

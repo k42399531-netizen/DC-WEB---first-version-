@@ -1,0 +1,156 @@
+/* الاساسيات*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/DC-2.png);
+    position: relative;
+}
+/* تسجيل الدخول*/
+.main-signin{
+    text-align: center;
+    margin-top: 3vh;
+}
+.main-signin label{
+    font-family: sans-serif;
+    font-size: 5vh;
+    color:aqua;
+    font-weight: 300;
+}
+.main-signin input{
+    font-size: 3vh;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+.main-signin button{
+    border: 2px gray solid;
+    border-radius: 20px;
+    padding: 1vh 1vh;
+    font-size: 3vh;
+    font-weight: 400;
+    color: black;
+    font-family: sans-serif;
+    background-color: green;
+}
+/* الايقونات*/
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vh;
+    font-size: 70px;
+    font-family: sans-serif;
+    color: aqua;
+    margin-top:6vh ;
+}
+/* تحسينات للشاشات المتوسطة (تابلت) */
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    body {
+        background-image: linear-gradient(to right, rgb(0, 20, 40), rgb(20, 40, 60), rgb(10, 30, 50));
+        background-color: rgb(10, 30, 50);
+    }
+    .main-signin {
+        padding: 2vh;
+    }
+    .main-signin label {
+        font-size: 4.5vh;
+    }
+    .main-signin input {
+        font-size: 2.8vh;
+    }
+    .icons {
+        font-size: 60px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة (موبايل) */
+@media screen and (max-width: 800px) {
+    body {
+        background-image: linear-gradient(135deg, rgb(0, 50, 100), rgb(20, 80, 120), rgb(10, 40, 70));
+        background-color: rgb(10, 40, 70);
+        padding: 1vh;
+    }
+
+    .main-signin {
+        padding: 1vh;
+        margin-top: 1vh;
+    }
+
+    .main-signin label {
+        font-size: 3.5vh;
+        display: block;
+        margin-bottom: 0.5vh;
+    }
+
+    .main-signin input {
+        font-size: 2.5vh;
+        width: 90%;
+        max-width: 400px;
+        padding: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .main-signin select {
+        font-size: 2.5vh;
+        width: 90%;
+        max-width: 400px;
+        padding: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .main-signin button {
+        font-size: 2.5vh;
+        padding: 1vh 2vh;
+        margin: 1vh auto;
+        display: block;
+        width: auto;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3vh;
+        font-size: 50px;
+        margin-top: 4vh;
+    }
+
+    .titles h1 {
+        font-size: 3.5vh;
+        text-align: center;
+        padding: 1vh;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media screen and (max-width: 480px) {
+    body {
+        background-image: linear-gradient(135deg, rgb(0, 40, 80), rgb(15, 60, 100), rgb(5, 30, 60));
+        background-color: rgb(5, 30, 60);
+    }
+    .main-signin label {
+        font-size: 3vh;
+    }
+
+    .main-signin input,
+    .main-signin select {
+        font-size: 2vh;
+        width: 95%;
+    }
+
+    .main-signin button {
+        font-size: 2vh;
+        padding: 0.8vh 1.5vh;
+    }
+
+    .icons {
+        font-size: 40px;
+        gap: 2vh;
+    }
+
+    .titles h1 {
+        font-size: 3vh;
+    }
+}
